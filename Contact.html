@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrive@NWU Contact</title>
+
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #b593da;
+            color: #333;
+        }
+
+        header{
+            background-color: #6a0dad;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover{
+            text-decoration: underline;
+        }
+
+        .container{
+            width: 85%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1{
+            text-align: center;
+            color: #4b0082;
+            margin-top: 20px;
+        }
+
+        .subtitle{
+            text-align: center;
+            color: #6a0dad;
+        }
+
+        .contact-box{
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+
+        label{
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea{
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+
+        textarea{
+            height: 120px;
+            resize: none;
+        }
+
+nav button{
+    background: linear-gradient(135deg, #7e57c2, #5e35b1);
+    border: none;
+    color: white;
+    font-weight: bold;
+    margin: 10px;
+    padding: 12px 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+
+    box-shadow: 0 0 10px rgba(126, 87, 194, 0.6),
+                0 0 20px rgba(94, 53, 177, 0.4);
+
+    transition: all 0.3s ease;
+}
+
+nav button:hover{
+    transform: scale(1.1);
+
+    background: linear-gradient(135deg, #ffd54f, #ffb300);
+    color: #222;
+
+    box-shadow: 0 0 15px rgba(255, 213, 79, 0.8),
+                0 0 30px rgba(255, 213, 79, 0.5);
+}
+
+        footer{
+            background-color: #6a0dad;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        button[type="submit"]{
+    background: linear-gradient(135deg, #7e57c2, #5e35b1);
+    border: none;
+    color: white;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 12px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 15px;
+
+    box-shadow: 0 0 10px rgba(126, 87, 194, 0.7),
+                0 0 25px rgba(94, 53, 177, 0.5);
+
+    transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover{
+    transform: scale(1.08);
+
+    background: linear-gradient(135deg, #9c6bff, #6a0dad);
+
+    box-shadow: 0 0 15px rgba(156, 107, 255, 0.9),
+                0 0 35px rgba(106, 13, 173, 0.6);
+}
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+    <button onclick="go('index.html')">Home</button>
+    <button onclick="go('wellness.html')">Wellness Tips</button>
+    <button onclick="go('lifestyle.html')">Student Lifestyle</button>
+    <button onclick="go('contact.html')">Emergency Contacts</button>
+    </nav>
+
+    </header>
+
+    <div class="container">
+
+        <h1>Thrive@NWU</h1>
+
+        <h2 class="subtitle">Student Wellness and support hub</h2>
+
+        <div class="contact-box">
+
+            <h2>Contact and support</h2>
+
+            <p>
+                If you need support, guidance, or someone to talk to,
+                please reach out using the form below.
+            </p>
+
+            <form>
+
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your full name">
+
+                <label>Student Email</label>
+                <input type="email" placeholder="Enter your email">
+
+                <label>Subject</label>
+                <input type="text" placeholder="enter subject">
+
+                <label>Message</label>
+                <textarea placeholder="Write your message here..."></textarea>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+
+        </div>
+
+        <div class="contact-box">
+
+            <h2>Emergency contacts</h2>
+
+            <h3>NWU Student Counceling</h3>
+            <p>email: support@nwu.ac.za</p>
+            <p>Phone: 0182991111</p>
+
+            <h3>Campus Security</h3>
+            <p>Available 24/7 for emergencies</p>
+            <p>Phone: 018 299 222</p>
+
+            <h3>South African Depresion &amp; Anxiety Group</h3>
+            <p>Helpline: 0789118830</p>
+
+            <p>
+                Feel free to reach out if you have questions about our campus,
+                courses, or creative programs.
+            </p>
+
+        </div>
+
+    </div>
+
+    <footer>
+        © 2026 Thrive@NWU | Designed for NWU Students
+    </footer>
+
+    <script>
+function go(page){
+    window.location.href = page;
+}
+</script>
+
+</body>
+</html>

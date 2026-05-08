@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrive@NWU - Wellness Tips</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ab82d7;
+            color: #333;
+        }
+
+        header{
+            background-color: #6a0dad;
+            padding: 15px;
+            text-align: center;
+        }
+
+       nav{
+    background-color: #5e35b1;
+    padding: 15px;
+    text-align: center;
+}
+
+nav button{
+    background: linear-gradient(135deg, #7e57c2, #5e35b1);
+    border: none;
+    color: white;
+    font-weight: bold;
+    margin: 10px;
+    padding: 12px 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+
+    box-shadow: 0 0 10px rgba(126, 87, 194, 0.6),
+                0 0 20px rgba(94, 53, 177, 0.4);
+
+    transition: all 0.3s ease;
+}
+
+nav button:hover{
+    transform: scale(1.1);
+
+    background: linear-gradient(135deg, #ffd54f, #ffb300);
+    color: #222;
+
+    box-shadow: 0 0 15px rgba(255, 213, 79, 0.8),
+                0 0 30px rgba(255, 213, 79, 0.5);
+}
+
+        .container{
+            width: 85%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1{
+            color: #4b0082;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        h2{
+            color: #6a0dad;
+        }
+
+        .tip-box{
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+        }
+
+        ul{
+            line-height: 1.8;
+        }
+
+        blockquote{
+            background-color: #e6d6ff;
+            padding: 15px;
+            border-left: 5px solid #6a0dad;
+            font-style: italic;
+            margin-top: 20px;
+        }
+
+        footer{
+            background-color: #6a0dad;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+<nav>
+    <button onclick="go('index.html')">Home</button>
+    <button onclick="go('wellness.html')">Wellness Tips</button>
+    <button onclick="go('lifestyle.html')">Student Lifestyle</button>
+    <button onclick="go('contact.html')">Emergency Contacts</button>
+</nav>
+    </header>
+
+    <div class="container">
+
+        <h1>Thrive@NWU</h1>
+
+        <h2 style="text-align:center;">Student Wellness &amp; Support Hub</h2>
+
+        <div class="tip-box">
+            <h2>Wellness Tips for Students</h2>
+
+            <p>
+                Student life can be challenging. These wellness tips can help you
+                maintain a healthy and balanced lifestyle.
+            </p>
+
+            <h3>Manage Academic Stress</h3>
+            <p>
+                Create a study timetable, avoid procrastination, and break large
+                tasks into smaller manageable goals.
+            </p>
+
+            <h3>Get Enough Sleep</h3>
+            <p>
+                Sleeping for at least 7-8 hours improves concentration, memory,
+                and emotional wellbeing.
+            </p>
+
+            <h3>Stay Physically Active</h3>
+            <p>
+                Exercise regularly to reduce stress, improve mood, and maintain
+                physical health.
+            </p>
+
+            <h3>Eat Healthy Meals</h3>
+            <p>
+                A balanced diet helps improve energy levels, focus, and overall
+                wellness.
+            </p>
+
+            <h3>Talk to Someone</h3>
+            <p>
+                Reach out to friends, family, lecturers, or counselling services
+                when feeling overwhelmed.
+            </p>
+
+            <h3>Take Study Breaks</h3>
+            <p>
+                Short breaks during study sessions can improve productivity and
+                reduce burnout.
+            </p>
+
+            <h3>Simple Self-Care Activities</h3>
+
+            <ul>
+                <li>Listen to music</li>
+                <li>Go for a walk</li>
+                <li>Practice deep breathing</li>
+                <li>Spend time with friends</li>
+                <li>Take breaks from social media</li>
+            </ul>
+
+            <blockquote>
+                “Your mental health is just as important as your academic success.”
+            </blockquote>
+
+        </div>
+
+    </div>
+
+    <footer>
+        © 2026 Thrive@NWU | Designed for NWU Students
+    </footer>
+
+    <script>
+function go(page){
+    window.location.href = page;
+}
+</script>
+
+</body>
+</html>

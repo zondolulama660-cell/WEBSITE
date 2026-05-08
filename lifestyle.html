@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrive@NWU</title>
+
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #9978c0;
+            color: #333;
+        }
+
+        header{
+            background-color: #7e57c2;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        nav{
+            background-color: #5e35b1;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav button{
+    background: linear-gradient(135deg, #7e57c2, #5e35b1);
+    border: none;
+    color: white;
+    font-weight: bold;
+    margin: 10px;
+    padding: 12px 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+
+    box-shadow: 0 0 10px rgba(126, 87, 194, 0.6),
+                0 0 20px rgba(94, 53, 177, 0.4);
+
+    transition: all 0.3s ease;
+}
+
+nav button:hover{
+    transform: scale(1.1);
+
+    background: linear-gradient(135deg, #ffd54f, #ffb300);
+    color: #222;
+
+    box-shadow: 0 0 15px rgba(255, 213, 79, 0.8),
+                0 0 30px rgba(255, 213, 79, 0.5);
+}
+
+        section{
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+        }
+
+        h2{
+            color: #5e35b1;
+        }
+
+        .button{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 20px;
+
+    background: linear-gradient(135deg, #7e57c2, #5e35b1);
+    color: white;
+    text-decoration: none;
+
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 14px;
+
+    box-shadow: 0 0 10px rgba(126, 87, 194, 0.6),
+                0 0 20px rgba(94, 53, 177, 0.4);
+
+    transition: all 0.3s ease;
+        }
+    
+        .button:hover{
+    transform: scale(1.1);
+
+    background: linear-gradient(135deg, #ffd54f, #ffb300);
+    color: #222;
+
+    box-shadow: 0 0 15px rgba(255, 213, 79, 0.8),
+                0 0 30px rgba(255, 213, 79, 0.5);
+}
+
+
+
+        footer{
+            background-color: #5e35b1;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        ul{
+            line-height: 2;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav>
+    <button onclick="go('index.html')">Home</button>
+    <button onclick="go('wellness.html')">Wellness Tips</button>
+    <button onclick="go('lifestyle.html')">Student Lifestyle</button>
+    <button onclick="go('contact.html')">Emergency Contacts</button>
+    </nav>
+
+    <header>
+        <h1>Thrive@NWU</h1>
+        <h2>Student Wellness & Support Hub</h2>
+    </header>
+
+    <section>
+        <h2>Student Wellness Resources</h2>
+        <p>
+            Explore helpful support services, study tools, and wellness resources 
+            designed for NWU students.
+        </p>
+    </section>
+
+    <section>
+        <h2>Student Counseling Services</h2>
+        <p>
+            Access emotional support, counselling, and mental guidance 
+            from trained professionals.
+        </p>
+
+        <a href="#" class="button">Learn More</a>
+    </section>
+
+    <section>
+        <h2>Academic Support</h2>
+        <p>
+            Find study tips, time management strategies, and academic guidance 
+            to improve performance.
+        </p>
+
+        <a href="#" class="button">Learn More</a>
+    </section>
+
+    <section>
+        <h2>Healthy Living Tips</h2>
+        <p>
+            Learn about healthy eating, sleep habits, exercise, and maintaining 
+            a balanced lifestyle.
+        </p>
+
+        <a href="#" class="button">Learn More</a>
+    </section>
+
+    <section>
+        <h2>Emergency Support</h2>
+        <p>
+            Important emergency numbers and support services available 
+            to students on campus.
+        </p>
+
+        <a href="#" class="button">Learn More</a>
+    </section>
+
+    <section>
+        <h2>WELLNESS TIPS SECTION</h2>
+
+        <h3>Quick Wellness Tips</h3>
+
+        <ul>
+            <li>Take regular study breaks to avoid burnout.</li>
+            <li>Stay hydrated and maintain healthy eating habits.</li>
+            <li>Get enough sleep before tests and assignments.</li>
+            <li>Reach out for support when feeling overwhelmed.</li>
+            <li>Balance academic work with social and personal time.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2026 Thrive@NWU | Designed for NWU Students</p>
+    </footer>
+
+    <script>
+function go(page){
+    window.location.href = page;
+}
+</script>
+
+</body>
+</html>

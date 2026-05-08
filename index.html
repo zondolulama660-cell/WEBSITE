@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrive@NWU</title>
+
+    <style>
+
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #b996d9;
+            color: #333;
+        }
+
+        nav{
+            background-color: #5e35b1;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover{
+            color: #ffd54f;
+        }
+
+        header{
+            background-color: #7e57c2;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1{
+            margin: 0;
+            font-size: 40px;
+        }
+
+        header h2{
+            margin-top: 10px;
+            font-size: 22px;
+        }
+
+        section{
+            background-color: white;
+            margin: 20px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0px 3px 8px rgba(0,0,0,0.2);
+        }
+
+        h2{
+            color: #5e35b1;
+        }
+
+        .box{
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #ede7f6;
+            border-left: 6px solid #7e57c2;
+            border-radius: 8px;
+        }
+
+        .motivation{
+            text-align: center;
+            font-size: 22px;
+            font-style: italic;
+            color: #5e35b1;
+            margin: 30px;
+        }
+
+        footer{
+            background-color: #5e35b1;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+     nav button{
+    background: linear-gradient(135deg, #7e57c2, #5e35b1);
+    border: none;
+    color: white;
+    font-weight: bold;
+    margin: 10px;
+    padding: 12px 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+
+    box-shadow: 0 0 10px rgba(126, 87, 194, 0.6),
+                0 0 20px rgba(94, 53, 177, 0.4);
+
+    transition: all 0.3s ease;
+}
+nav button:hover{
+    transform: scale(1.1);
+
+    background: linear-gradient(135deg, #ffd54f, #ffb300);
+    color: #222;
+
+    box-shadow: 0 0 15px rgba(255, 213, 79, 0.8),
+                0 0 30px rgba(255, 213, 79, 0.5);
+}
+
+    </style>
+</head>
+
+<body>
+
+    
+  <nav>
+    <button onclick="go('index.html')">Home</button>
+    <button onclick="go('wellness.html')">Wellness Tips</button>
+    <button onclick="go('lifestyle.html')">Student Lifestyle</button>
+    <button onclick="go('contact.html')">Emergency Contacts</button>
+  </nav>
+    
+
+    <header>
+        <h1>THRIVE@NWU</h1>
+        <h2>STUDENT WELLNESS AND SUPPORT HUB</h2>
+    </header>
+
+    <section>
+        <h2>Your Mental Health Matters</h2>
+
+        <p>
+            Thrive@NWU is a student wellness platform designed to support 
+            North-West University students with mental health resources, 
+            stress management tips, academic balance guidance, and student support services.
+        </p>
+    </section>
+
+    <section>
+        <h2>About Thrive@NWU</h2>
+
+        <p>
+            University life can be stressful and overwhelming. 
+            Many students experience anxiety, academic pressure, burnout, 
+            loneliness, and emotional fatigue.
+        </p>
+
+        <p>
+            Thrive@NWU was created to help students find reliable support, 
+            wellness advice, and useful campus resources in one place.
+        </p>
+    </section>
+
+    <section>
+        <h2>What We Offer</h2>
+
+        <div class="box">
+            <h3>Stress Management</h3>
+            <p>
+                Learn counselling services, emergency contacts, 
+                and improve your mental wellbeing.
+            </p>
+        </div>
+
+        <div class="box">
+            <h3>Student Support</h3>
+            <p>
+                Access counselling services, emergency contacts, 
+                and student support resources.
+            </p>
+        </div>
+
+        <div class="box">
+            <h3>Healthy Lifestyle Tips</h3>
+            <p>
+                Discover tips on sleep, exercise, nutrition, 
+                and balancing student life.
+            </p>
+        </div>
+    </section>
+
+    <div class="motivation">
+        "Take care of yourself. You cannot pour from an empty cup."
+    </div>
+
+    <footer>
+        © 2026 Thrive@NWU | Designed for NWU Students
+    </footer>
+     
+    <script>
+function go(page){
+    window.location.href = page;
+}
+</script>
+
+</body>
+</html>
